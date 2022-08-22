@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form action="/users" method="POST" >
+      <input type="text" placeholder="name" name="name">
+      <input type="text" placeholder="university" name="university">
+      <input type="number" placeholder="studentid" name="studentid">
+      <button type="submit">Submit</button>
+    </form>
+
+    <form action="/roles" method="POST" >
+      <input type="text" placeholder="name" name="name">
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+  
+</html>

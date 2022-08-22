@@ -1,0 +1,1 @@
+node util/init-db.js --yes || npm run start

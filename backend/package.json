@@ -1,0 +1,50 @@
+{
+  "name": "ce-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/util/init-db.js --yes && node src/bin/www",
+    "dev": "nodemon start",
+    "test": "jest --testEnvironment=node --forceExit",
+    "check": "node src/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "commander": "^6.2.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.6.1",
+    "express": "^4.17.1",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.20",
+    "inquirer": "^7.3.3",
+
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.15",
+    "morgan": "~1.9.1",
+    "nanoid": "^3.1.12",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "nodemon": "^2.0.4"
+  },
+  "description": "## Project setup",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eric-sciberras/SWEN90013-2020-CE-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eric-sciberras/SWEN90013-2020-CE-Backend/issues"
+  },
+  "homepage": "https://github.com/eric-sciberras/SWEN90013-2020-CE-Backend#readme"
+}
