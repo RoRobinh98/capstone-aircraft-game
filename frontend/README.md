@@ -1,25 +1,7 @@
 # Air Crash Investigations: A Game of Ethics (Frontend)
 
-Application Deployed Here: https://game-of-ethics.herokuapp.com/ 
+Application Deployed Here: https://game-of-ethics-2022.herokuapp.com/
 
-## Team Members
-
-<table>
-    <tr>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/31333514?s=100&v=4" width="100px;"height="100px;"alt="" /><br /><sub><b>Yu Guo</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/22024788?s=100&v=4" width="100px;"height="100px;"alt="" /><br /><sub><b>Chenling Huang</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/28424009?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Angus Hudson</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/54093029?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Peiwen Jin</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37367037?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Akhmetzhan Kussainov</b></sub></a><br /></td>  
-    </tr>
-    <tr>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/28001836?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Lu Lei</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/49152711?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Yuhen LI</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37064634?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Eric Sciberras</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/34187831?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Rainer Selby</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37160420?s=100&&v=4" width="100px;"alt="" /><br /><sub><b>Christina Xu</b></sub></a><br /></td>
-    </tr>
-</table>
 
 ## Project setup
 
@@ -29,9 +11,9 @@ Application Deployed Here: https://game-of-ethics.herokuapp.com/
 ```
 npm install
 ```
-2. Rename `.env.example` to `.env` and set the parameters:
+2. Set the parameters in `.env` :
 - `PORT`: Port number for proudction server (only used for deployment)
-- `VUE_APP_BACKEND_URL`: URL for backend service (Note: please include trailing /)
+- `VUE_APP_BACKEND_URL`: URL for backend service (e.g. https://[your app name].herokuapp.com/ ; fill the brackets with your app's name and don't forget the trail in the end)
 
 #### Compiles and hot-reloads for development
 ```
@@ -61,22 +43,23 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Email Account (Required To maintain other accounts)
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: swen90013
+email address: comp90082gameofethic@gmail.com
+password: comp90082
 ```
 
 ### MongoDB account
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: swen90013
+email address: comp90082gameofethic@gmail.com
+password: comp90082
 ```
 
 ### Heroku
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: ceQVY863N5HAR5*
+email address: comp90082gameofethic@gmail.com
+password: comp90082!
+api key: 1ff6fe23-c7d1-4b5e-9c4f-f2d440c91d63
 ```
 
 ## Deployment
