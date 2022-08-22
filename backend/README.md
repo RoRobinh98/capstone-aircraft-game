@@ -1,27 +1,6 @@
 # Air Crash Investigations: A Game of Ethics (Backend)
 
-API Deployed here: https://game-of-ethics-backend.herokuapp.com/ 
-
-For the game, go here: https://game-of-ethics.herokuapp.com/ 
-
-## Team Members
-
-<table>
-    <tr>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/31333514?s=100&v=4" width="100px;"height="100px;"alt="" /><br /><sub><b>Yu Guo</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/22024788?s=100&v=4" width="100px;"height="100px;"alt="" /><br /><sub><b>Chenling Huang</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/28424009?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Angus Hudson</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/54093029?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Peiwen Jin</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37367037?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Akhmetzhan Kussainov</b></sub></a><br /></td>  
-    </tr>
-    <tr>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/28001836?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Lu Lei</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/49152711?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Yuhen LI</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37064634?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Eric Sciberras</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/34187831?s=100&v=4" width="100px;"alt="" /><br /><sub><b>Rainer Selby</b></sub></a><br /></td>
-        <td align="center"><img src="https://avatars.githubusercontent.com/u/37160420?s=100&&v=4" width="100px;"alt="" /><br /><sub><b>Christina Xu</b></sub></a><br /></td>
-    </tr>
-</table>
+API Deployed here: https://ge-backend.herokuapp.com/  
 
 ## Requirements
 
@@ -34,9 +13,9 @@ For the game, go here: https://game-of-ethics.herokuapp.com/
 1. Ensure MongoDB has been setup 
 2. Run
 ```
-npm ci
+npm install
 ```
-3. Rename `.env.example` to `.env` and set the parameter:
+3.  Set the parameter in `.env`:
 - `MONGODB_URL`: URL for MongoDB service.
 
 ### Run webserver
@@ -51,22 +30,23 @@ The process run on port 3000
 ### Email Account (Required To maintain other accounts)
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: swen90013
+email address: comp90082gameofethic@gmail.com
+password: comp90082
 ```
 
 ### MongoDB account
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: swen90013
+email address: comp90082gameofethic@gmail.com
+password: comp90082
 ```
 
 ### Heroku
 
 ```
-email address: aircrash.investigation2020@outlook.com
-password: ceQVY863N5HAR5*
+email address: comp90082gameofethic@gmail.com
+password: comp90082!
+api password: 1ff6fe23-c7d1-4b5e-9c4f-f2d440c91d63
 ```
 
 ## Extending Software
@@ -144,7 +124,7 @@ https://raw.githubusercontent.com/sahat/hackathon-starter/master/README.md
 13. Under section **(1) Check the IP Whitelist**, click on **ALLOW ACCESS FROM ANYWHERE**. The form will add a field with `0.0.0.0/0`.  Click **SAVE** to save the `0.0.0.0/0` whitelist.
 14. Under section **(2) Choose a connection method**, click on **Connect Your Application**
 15. In the new screen, select **Node.js** as Driver and version **2.2.12 or later**. _*WARNING*_: Do not pick 3.0 or later since connect-mongo can't handle mongodb+srv:// connection strings.
-16. Finally, copy the URI connection string and replace the URI in MONGODB_URI of `.env.example` with this URI string.  Make sure to replace the <PASSWORD> with the db User password that you created under the Security tab.
+16. Finally, copy the URI connection string and replace the URI in MONGODB_URI of `.env` with this URI string.  Make sure to replace the <PASSWORD> with the db User password that you created under the Security tab.
 17. Note that after some of the steps in the Atlas UI, you may see a banner stating `We are deploying your changes`.  You will need to wait for the deployment to finish before using the DB in your application.
 
 
@@ -159,9 +139,11 @@ https://raw.githubusercontent.com/sahat/hackathon-starter/master/README.md
 
 1. Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/)
 2. In a terminal, run `heroku login` and enter your Heroku credentials
-3. From *your app* directory run `heroku create`
+3. From *your app* directory run `heroku create -a [your app name]`
 4. Use the command `heroku config:set KEY=val` to set the different environment variables (KEY=val) for your application (i.e.  `heroku config:set BASE_URL=[heroku App Name].herokuapp.com` or `heroku config:set MONGODB_URI=mongodb://dbuser:<password>@cluster0-shard-00-00-sdf32.mongodb.net:27017,cluster0-shard-00-01-sdf32.mongodb.net:27017/<dbname>?ssl=true&retryWrites=true&w=majority` (see Hosted MongoDB Atlas below), etc.)  Make sure to set the environment variables for SENDGRID_USER, SENDGRID_PASSWORD, and any other API that you are using as well.
-5. Lastly, do `git push heroku master`.
+5. Initial your git with `git init`
+6. Use `git add .` and `git commit -m 'first commit'` to do the first commit 
+7. Lastly, do `git push heroku master`.
 
 Please note that you may also use the [Herko Dashboard](https://dashboard.heroku.com) to set or modify the configurations for your application.
 

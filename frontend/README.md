@@ -73,9 +73,11 @@ https://raw.githubusercontent.com/sahat/hackathon-starter/master/README.md
 
 1. Download and install [Heroku Toolbelt](https://toolbelt.heroku.com/)
 2. In a terminal, run `heroku login` and enter your Heroku credentials
-3. From *your app* directory run `heroku create`
+3. From *your app* directory run `heroku create -a [your app name]`
 4. Use the command `heroku config:set KEY=val` to set the different environment variables (KEY=val) for your application (i.e.  `heroku config:set BASE_URL=[heroku App Name].herokuapp.com` or `heroku config:set VUE_APP_BACKEND_URL=http://backend-url.com` (see Hosted MongoDB Atlas below), etc.)  Make sure to set the environment variables for SENDGRID_USER, SENDGRID_PASSWORD, and any other API that you are using as well.
-5. Lastly, do `git push heroku master`.
+5. Initial your git with `git init`
+6. Use `git add .` and `git commit -m 'first commit'` to do the first commit 
+7. Lastly, do `git push heroku master`.
 
 Please note that you may also use the [Heroku Dashboard](https://dashboard.heroku.com) to set or modify the configurations for your application.
 
