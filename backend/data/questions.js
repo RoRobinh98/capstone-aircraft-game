@@ -1,6 +1,24 @@
 module.exports = {
     "questions": [
         {
+            questionID: -1,
+            background: "Mark the end",
+            question: "Mark the end",
+            options: [1, 2, 3, 4, 5],
+            roleInfo: ["Thank",
+                "you",
+                "for",
+                "playing",
+                "gg"], // 0: executive 1: developer 2: pilot 3: engineer 4: FAA
+            duration: 20,
+            weights: [20, 20, 20, 20, 20], // sum to 100
+            optionsFinalWeights: [0, 0, 0, 0, 0], // amount should be consistent with the amount of options
+            readyCount: 0,
+            readyPlayer: [],
+            votedCount: 0,
+            votedPlayer: [],
+        },
+        {
             questionID: 1,
             background: "The five of you have been selected as influential members of a project team working on an innovative new plane design, dubbed the 'Vision 777'. Each of you have joined the project with a unique backstory, and more importantly, a unique set of goals that each of you must ensure are fulfilled by game's end. These goals will sometimes be fairly clear, and other times will not be known until the very end of the project. The executive board have allocated $10 billion toward the project, and has stipulated a hard deadline of two years from today to complete it. Together, and sometimes apart, you will all make decisions that ultimately determine the fate of the project, as well as yourselves. It is up to you to work together as well as apart, using the information and goals you have been given, to win.",
             question: "The five of you are currently in a meeting to discuss the project and the focus of the team. Which area will the team prioritize:",
